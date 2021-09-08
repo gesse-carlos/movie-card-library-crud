@@ -6,7 +6,7 @@ class NotFound extends Component {
     return (
       <div data-testid="404-error">
         Página não encontrada
-        <Link to="/" className="link">Página Inicial</Link>
+        <Link to="/movie-card-library-crud" className="link">Página Inicial</Link>
       </div>
     );
   }

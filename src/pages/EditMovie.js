@@ -41,7 +41,7 @@ class EditMovie extends Component {
   render() {
     const { loading, movie, redirect } = this.state;
 
-    if (redirect) return <Redirect to="/" />;
+    if (redirect) return <Redirect to="/movie-card-library-crud" />;
     if (loading) return <Loading />;
 
     return (
