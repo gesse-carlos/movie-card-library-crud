@@ -54,7 +54,7 @@ class MovieList extends Component {
           </section>
         </main>
         <footer>
-          <Link to="/movies/new" className="add-card">ADICIONAR CARTÃO</Link>
+          <Link to="/movie-card-library-crud/movies/new" className="add-card">ADICIONAR CARTÃO</Link>
         </footer>
       </div>
     );

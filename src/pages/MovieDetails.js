@@ -52,7 +52,7 @@ class MovieDetails extends Component {
             <h2 className="movie-card-title">{ `Title: ${title}` }</h2>
             <img
               alt={title}
-              src={ `../${imagePath}` }
+              src={ imagePath }
               className="movie-card-image"
             />
             <p className="movie-card-subtitle">{ `Subtitle: ${subtitle}` }</p>
@@ -60,7 +60,7 @@ class MovieDetails extends Component {
             <p>{ `Genre: ${genre}` }</p>
             <p>{ `Rating: ${rating}` }</p>
           </section>
-          <Link to={ `/movies/${id}/edit` } className="button">EDITAR</Link>
+          <Link to={ `/movie-card-library-crud/movies/${id}/edit` } className="button">EDITAR</Link>
           <Link
             to="/movie-card-library-crud"
             onClick={ () => this.removeMovie(id) }
