@@ -62,13 +62,13 @@ class MovieDetails extends Component {
           </section>
           <Link to={ `/movies/${id}/edit` } className="button">EDITAR</Link>
           <Link
-            to="/"
+            to="/movie-card-library-crud"
             onClick={ () => this.removeMovie(id) }
             className="button"
           >
             DELETAR
           </Link>
-          <Link to="/" className="button">VOLTAR</Link>
+          <Link to="/movie-card-library-crud" className="button">VOLTAR</Link>
         </div>
       )
     );
