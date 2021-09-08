@@ -51,7 +51,7 @@ class MovieDetails extends Component {
           <section data-testid="movie-details" className="movie-card">
             <h2 className="movie-card-title">{ `Title: ${title}` }</h2>
             <img
-              alt="Movie Cover"
+              alt={title}
               src={ `../${imagePath}` }
               className="movie-card-image"
             />
@@ -62,13 +62,13 @@ class MovieDetails extends Component {
           </section>
           <Link to={ `/movies/${id}/edit` } className="button">EDITAR</Link>
           <Link
-            to="/movie-card-library-crud"
+            to="/"
             onClick={ () => this.removeMovie(id) }
             className="button"
           >
             DELETAR
           </Link>
-          <Link to="/movie-card-library-crud" className="button">VOLTAR</Link>
+          <Link to="/" className="button">VOLTAR</Link>
         </div>
       )
     );
