@@ -170,7 +170,7 @@ class MovieForm extends React.Component {
           {this.renderRatingInput()}
           {this.renderSubmitButton()}
         </form>
-        <Link to="/" className="button">Voltar</Link>
+        <Link to="/movie-card-library-crud" className="button">Voltar</Link>
       </div>
     );
   }
